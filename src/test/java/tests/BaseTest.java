@@ -11,18 +11,22 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.WorkoutFullAddListPage;
+import pages.WorkoutQuickAddListPage;
 import tests.base.TestListener;
 
 import java.util.concurrent.TimeUnit;
 
 @Log4j2
-@Listeners(TestListener.class)
+//@Listeners{(TestListener.class)
 public class BaseTest {
 
     WebDriver driver;
     WebDriverWait wait;
     protected LoginPage loginPage;
     protected HomePage homePage;
+    protected WorkoutQuickAddListPage workoutQuickAddListPage;
+    protected WorkoutFullAddListPage workoutFullAddListPage;
     public static final String EMAIL = "nastyamartsuta@gmail.com";
     public static final String PASSWORD = "Password16";
     public static final String INVALID_EMAIL = "123@gmail.com";
@@ -40,6 +44,8 @@ public class BaseTest {
 
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
+        workoutQuickAddListPage = new WorkoutQuickAddListPage(driver);
+        workoutFullAddListPage = new WorkoutFullAddListPage(driver);
     }
 
     @AfterMethod(alwaysRun = true, description = "Close Browser")

@@ -9,7 +9,9 @@ Testing of "https://log.finalsurge.com/login.cshtml" website.
 1.4 Login test with invalid Email and Password  
 1.5 Login test with empty Email and valid Password
 1.6 Login test with valid Email and empty Password
-1.7 Login test with empty Email and Password 
+1.7 Login test with empty Email and Password
+# 2. Add Workout through Quick Add
+# 3. Add Workout through Full Add
 
 
 
