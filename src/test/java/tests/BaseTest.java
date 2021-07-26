@@ -5,6 +5,7 @@ import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -47,7 +48,7 @@ public class BaseTest {
             options.addArguments("--start-maximized");
             options.addArguments("--headless");
             options.addArguments("--disable-notifications");
-            driver = new OperaDriver();
+            driver = new FirefoxDriver(options);
         }
         testContext.setAttribute("driver", driver);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); //НЕЯВНЫЕ ОЖИДАНИЯ
