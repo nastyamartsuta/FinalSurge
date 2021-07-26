@@ -5,16 +5,18 @@
         <listener class-name="tests.base.AnnotationTransformer"/>
     </listeners>
     <test name="Thread 1">
-<!--        <parameter name="browser" value="chrome"></parameter>-->
+        <parameter name="browser" value="chrome"></parameter>
         <classes>
+            <class name="tests.LoginTest"/>
             <class name="tests.WorkoutQuickAddTest"/>
+            <class name="tests.WorkoutFullAddTest"/>
+            <class name="tests.WorkoutCalculatorTest"/>
         </classes>
     </test> <!-- Test -->
     <test name="Thread 2">
-        <!--        <parameter name="browser" value="chrome"></parameter>-->
+        <parameter name="browser" value="opera"></parameter>
         <classes>
             <class name="tests.LoginTest"/>
-            <class name="tests.WorkoutFullAddTest"/>
         </classes>
     </test> <!-- Test -->
 </suite>

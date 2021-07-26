@@ -5,8 +5,6 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static org.testng.Assert.assertEquals;
-
 public abstract class BasePage {
     WebDriver driver;
     WebDriverWait wait;
