@@ -21,7 +21,7 @@ public class WorkoutQuickAddTest extends BaseTest {
         workoutQuickAddListPage
                 .open()
                 .clickQuickAdd()
-                .create(workoutQuickAdd);
+                .quickAddWorkout(workoutQuickAdd);
 
         String error = workoutQuickAddListPage.getMessage();
         assertEquals(error, "×\n" +
@@ -40,14 +40,12 @@ public class WorkoutQuickAddTest extends BaseTest {
         workoutQuickAddListPage
                 .open()
                 .clickQuickAdd()
-                .create(workoutQuickAdd);
+                .quickAddWorkout(workoutQuickAdd);
 
         String error = workoutQuickAddListPage.getMessage();
         assertEquals(error, "×\n" +
                         "*The workout was successfully saved to your Workout Library.",
                 "Workout has not been added to your workout library");
-//        workoutQuickAddListPage.deleteWorkout(workoutQuickAdd.getWorkoutName());
-
-
+        workoutQuickAddListPage.deleteWorkout(workoutQuickAdd.getWorkoutName());
     }
 }

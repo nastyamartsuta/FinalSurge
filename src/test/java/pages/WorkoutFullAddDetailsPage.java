@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class WorkoutFullAddDetailsPage extends BasePage {
+
     public static final By DETAILS_TAB = By.xpath("//div[contains(@class,'w-box-header')]//h4[contains(text(), 'Workout Details')]");
 
     public WorkoutFullAddDetailsPage(WebDriver driver) {
@@ -14,6 +15,4 @@ public class WorkoutFullAddDetailsPage extends BasePage {
     public boolean isPageOpened() {
         return isExist(DETAILS_TAB);
     }
-
-
 }

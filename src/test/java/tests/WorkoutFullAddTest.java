@@ -3,6 +3,7 @@ package tests;
 import lombok.extern.log4j.Log4j2;
 import models.WorkoutFullAdd;
 import models.WorkoutFullAddFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 @Log4j2
@@ -19,6 +20,8 @@ public class WorkoutFullAddTest extends BaseTest {
         workoutFullAddListPage
                 .open()
                 .clickFullAdd()
-                .create(workoutFullAdd);
+                .fullAddWorkout(workoutFullAdd);
+
+        Assert.assertTrue(workoutFullAddListPage.isPageOpened(), "Workout Details page was not opened");
     }
 }
