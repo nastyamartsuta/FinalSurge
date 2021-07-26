@@ -8,7 +8,8 @@ import org.openqa.selenium.WebDriver;
 @Log4j2
 public class WorkoutFullAddListPage extends BasePage {
     public static final By FULL_BUTTON = By.id("FullAddBtn");
-    public static final By title = By.id("dpMonth");
+    public static final By DETAILS_TAB = By.xpath("//div[contains(@class,'w-box-header')]//h4[contains(text(), 'Workout Details')]");
+
     public static final By MESSAGE = By.xpath("//span[contains(text(), 'View and Edit your workout.')]");
     public static final By SELECT_TYPE = By.xpath("//div[@id='col0']//a[@data-code='run']");
     public static final By NAV_LIST = By.xpath("//div[@class='accordion-inner']//a[contains(text(), 'Long Run')]");
@@ -19,7 +20,7 @@ public class WorkoutFullAddListPage extends BasePage {
 
     @Override
     public boolean isPageOpened() {
-        return isExist(title);
+        return isExist(DETAILS_TAB);
     }
 
     @Step("Open calendar page")

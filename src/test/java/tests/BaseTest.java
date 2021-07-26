@@ -5,8 +5,8 @@ import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
@@ -41,9 +41,9 @@ public class BaseTest {
             options.addArguments("--headless");
             options.addArguments("--disable-notifications");
             driver = new ChromeDriver(options);
-        } else if (browser.equals("opera")) {
-            WebDriverManager.operadriver().setup();
-            OperaOptions options = new OperaOptions();
+        } else if (browser.equals("firefox")) {
+            WebDriverManager.firefoxdriver().setup();
+            FirefoxOptions options = new FirefoxOptions();
             options.addArguments("--start-maximized");
             options.addArguments("--headless");
             options.addArguments("--disable-notifications");

@@ -14,7 +14,7 @@
         </classes>
     </test> <!-- Test -->
     <test name="Thread 2">
-        <parameter name="browser" value="opera"></parameter>
+        <parameter name="browser" value="firefox"></parameter>
         <classes>
             <class name="tests.LoginTest"/>
         </classes>
