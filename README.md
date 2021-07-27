@@ -1,4 +1,4 @@
-# FinalSurge Diploma                                                       <img align = "right">![logo](https://log.finalsurge.com/img/branded/finalsurge.png)<img>
+# FinalSurge Diploma-------------------------------------------------------------------<img align = "right">![logo](https://log.finalsurge.com/img/branded/finalsurge.png)<img>
 ## Checklist for [FinalSurge](https://log.finalsurge.com/login.cshtml)       
 ---------------------------------------------------------------------------
 ### Tests:
