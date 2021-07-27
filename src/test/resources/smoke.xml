@@ -8,6 +8,15 @@
         <parameter name="browser" value="chrome"></parameter>
         <classes>
             <class name="tests.LoginTest"/>
+            <class name="tests.WorkoutQuickAddTest"/>
+            <class name="tests.WorkoutFullAddTest"/>
+            <class name="tests.WorkoutCalculatorTest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Thread 2">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="tests.LoginTest"/>
         </classes>
     </test> <!-- Test -->
 </suite>
