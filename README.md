@@ -1,10 +1,9 @@
 # FinalSurge Diploma
 ## Checklist for [FinalSurge](https://log.finalsurge.com/login.cshtml) 
-
------------------------------------------------------<img align = "right">![logo](https://log.finalsurge.com/img/branded/finalsurge.png)<img>
+---------------------------------------------------------------------------<img align = "right">![logo](https://log.finalsurge.com/img/branded/finalsurge.png)<img>
 ### Tests:
 
-#### **_Login test:_**
+#### **_+ Login test:_**
 
 - Login test with valid Email and Password
 - Login test with invalid Email and valid Password
@@ -14,11 +13,11 @@
 - Login test with valid Email and empty Password
 - Login test with empty Email and Password
 
-#### **_Add Workout through Quick Add and delete workout_**
+#### **_+ Add Workout through Quick Add and delete workout_**
 
-#### **_Add Workout through Full Add_**
+#### **_+ Add Workout through Full Add_**
 
-#### **_Filling in the form calculator workout:_**
+#### **_+ Filling in the form calculator workout:_**
 
 - Filling in the form calculator Intensity workout
 - Filling in the form calculator Hansons workout
